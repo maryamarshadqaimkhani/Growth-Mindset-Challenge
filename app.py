@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st 
 
 # App title
 st.title("TO-DO List App")
@@ -39,12 +39,12 @@ else:
         if col2.button("Edit", key=f"edit_button_{index}"):
             if new_task_input and new_task_input != task["task"]:
                 st.session_state.tasks[index]["task"] = new_task_input
-                st.experimental_rerun()
+                st.rerun()
 
         # Delete task
         if col3.button("Delete", key=f"delete_{index}"):
             del st.session_state.tasks[index]
-            st.experimental_rerun()
+            st.rerun()
 
 # Clear all tasks
 if st.button("Clear all tasks"):
