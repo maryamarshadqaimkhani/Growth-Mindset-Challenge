@@ -1,7 +1,7 @@
 import streamlit as st 
 
 # App title
-st.title("Growth Mindset Challenge")
+st.title("Growth Mindset Challenge 🎉")
 
 # Initialize session state for tasks
 if "tasks" not in st.session_state:
